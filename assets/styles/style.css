@@ -120,6 +120,46 @@ body {
   background: rgb(208 140 226);
   transition: 0.3s;
 }
+
+.btn-added {
+  border: 2px solid black;
+  font-size: 32px;
+  padding-top: 0.75rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2.5rem !important;
+  padding-right: 2.5rem !important;
+  background: rgb(208 140 226);
+  transition: 0.3s;
+}
+@media (max-width: 1200px) {
+  .btn-added {
+    font-size: 24px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+}
+@media (max-width: 992px) {
+  .btn-added {
+    font-size: 20px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .btn-added {
+    font-size: 16px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+}
+
 .bttn2 {
   border: 1px solid black;
   padding: 5px 20px;
@@ -135,7 +175,8 @@ body {
 .bttn2:hover {
   transform: scale(1.1);
 }
-.bttn:hover {
+.bttn:hover,
+.btn-added:hover {
   opacity: 0.6;
 }
 @keyframes heartbeat {
