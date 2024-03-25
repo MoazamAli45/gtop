@@ -1,0 +1,417 @@
+/* Define custom fonts */
+@font-face {
+  font-family: "__displayFont_e6b3fa";
+
+  src: url(https://www.gtop.wtf/_next/static/media/7e1b91e70e161b62-s.p.ttf)
+    format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "__bodyFont_0f8db6";
+
+  src: url(https://www.gtop.wtf/_next/static/media/86c831eebe0466b6-s.p.otf)
+    format("truetype");
+  font-display: swap;
+}
+
+/* Bootstrap overrides */
+body {
+  font-family: "__bodyFont_0f8db6";
+  background-color: #8dd2e3 !important;
+}
+
+.container2 {
+  padding: 0px 1.25rem;
+}
+
+.header-section {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom: 1px solid black;
+  padding: 1.25rem;
+  z-index: 99;
+  background-color: #8dd2e3;
+}
+.logo img {
+  width: 380px;
+  height: 60px;
+}
+
+.menu-items ul {
+  list-style: none;
+  display: flex;
+  margin: 0px;
+  gap: 1.25rem;
+}
+.menu-items ul li a {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: black;
+  text-transform: uppercase;
+  font-family: "__bodyFont_0f8db6";
+}
+.menu-items ul li a:hover {
+  text-decoration: none;
+}
+.menu-items {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.playbtn {
+  padding: 0.5rem;
+  border: 2px solid black;
+  background-color: rgb(208 140 226);
+}
+
+/*   New Button */
+
+.btn-new {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+
+/* hero-section  */
+
+.hero-section {
+  padding-top: 160px;
+  padding-bottom: 30px;
+}
+
+.title {
+  font-size: 100px;
+  color: black;
+  margin: 0;
+  font-family: "__displayFont_e6b3fa";
+}
+.desc {
+  font-size: 28px;
+  line-height: 30px;
+  color: black;
+  text-transform: uppercase;
+}
+.desc2 {
+  font-size: 24px;
+  line-height: 30px;
+  color: black;
+  text-transform: uppercase;
+}
+.bgg {
+  background-color: #8dd2e3;
+  border: 1px solid black;
+
+  gap: 10px;
+}
+
+.bttn {
+  border: 2px solid black;
+  font-size: 32px;
+  padding-top: 0.75rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2.5rem !important;
+  padding-right: 2.5rem !important;
+  background: rgb(208 140 226);
+  transition: 0.3s;
+}
+.bttn2 {
+  border: 1px solid black;
+  padding: 5px 20px;
+  font-size: 1.5rem;
+  background: rgb(208 140 226);
+  transition: 0.3s;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.bttn2:hover {
+  transform: scale(1.1);
+}
+.bttn:hover {
+  opacity: 0.6;
+}
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animates-img img {
+  animation: heartbeat 0.5s infinite;
+  width: 400px;
+}
+.playbtn {
+  cursor: pointer;
+}
+.bg-section-main {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../images/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brokie {
+  font-size: 80px;
+  text-transform: uppercase;
+  padding: 40px 0px;
+  font-family: "__displayFont_e6b3fa";
+}
+
+.bg-section {
+  height: 1200px;
+  width: 100%;
+  background-image: url("../images/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  margin-top: 8rem;
+}
+
+/* army-section  */
+.army-section {
+  padding: 30px 0px;
+}
+.army-title {
+  margin-bottom: 4rem;
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  font-family: "__displayFont_e6b3fa";
+}
+.btn-top {
+  position: absolute;
+  width: 100%;
+  top: 66%;
+  gap: 100px;
+  margin-left: 54px;
+}
+.img-relative {
+  position: relative;
+}
+.righ-text {
+  font-size: 3.2rem;
+  line-height: 1;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* yellow section  */
+.main-section {
+  background: rgb(255 206 139);
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  overflow: hidden;
+}
+.animation-section {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.cardd {
+  padding: 45px 3rem;
+  border: 1px solid black;
+  background: #8dd2e3;
+  text-align: right;
+  text-transform: uppercase;
+  font-family: "__displayFont_e6b3fa";
+}
+.token {
+  line-height: 70px !important;
+  font-size: 4rem;
+}
+
+.head {
+  width: 580px;
+  height: 580px;
+  overflow: hidden;
+  rotate: 45deg;
+}
+
+.carousel-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  animation: carouselScroll 10s linear infinite; /* Adjust the duration (10s) as needed */
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  margin-right: 10px; /* Adjust the spacing between items */
+}
+
+@keyframes carouselScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(
+      calc(-100% - 10px)
+    ); /* Adjust based on the width and margin of items */
+  }
+}
+
+/* Container styles */
+.scrolling-text-container {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/* Inner container styles */
+.scrolling-text-inner {
+  display: flex;
+  white-space: nowrap;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* Text styles */
+.scrolling-text {
+  display: flex;
+}
+
+.scrolling-text-item {
+  padding: 0 5px;
+}
+
+/* Apply the animation to the text items */
+.scrolling-text-inner > div {
+  animation: scroll-right 10s linear infinite;
+}
+
+/* Setting the Animation using Keyframes */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.descriptiom {
+  max-width: 600px;
+  margin: auto;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: center;
+}
+.slick-slider img {
+  width: 250px;
+  height: 250px;
+}
+/* media query  */
+
+@media (max-width: 800px) {
+  .menu-items ul {
+    display: none;
+  }
+  .title {
+    font-size: 60px;
+    color: black;
+  }
+  .desc {
+    font-size: 24px;
+    line-height: 28px;
+    color: black;
+    text-transform: uppercase;
+  }
+  .bg-section {
+    height: 500px;
+  }
+  .army-title {
+    margin-bottom: 4rem;
+    font-size: 2.5rem;
+  }
+  .righ-text {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    color: black;
+  }
+  .desc2 {
+    font-size: 16px;
+  }
+  .mbbb {
+    margin-bottom: 30px;
+    overflow: hidden;
+  }
+  .logo img {
+    width: 220px;
+    height: 60px;
+    object-fit: contain;
+  }
+  .cardd {
+    padding: 45px 2rem;
+    overflow: hidden;
+    margin: 20px 0px;
+  }
+  .token {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+  .head {
+    width: 320px;
+    height: 320px;
+    overflow: hidden;
+    rotate: 45deg;
+  }
+
+  .descriptiom {
+    max-width: 100%;
+    margin: auto;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+  }
+  .bgg {
+    flex-direction: column;
+  }
+  .bttn2 {
+    width: 200px;
+    justify-content: center;
+  }
+  .banner {
+    padding-top: 50px;
+  }
+  .slick-slider img {
+    width: 100%;
+    height: auto;
+  }
+
+  .brokie {
+    font-size: 32px;
+  }
+}
